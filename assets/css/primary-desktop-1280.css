@@ -4,6 +4,11 @@ html, body {
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #FDF8F1;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +16,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
 }
 
 .headline {
@@ -25,6 +38,7 @@ body {
 }
 
 .sub-headline {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -38,4 +52,77 @@ body {
     text-align: center;
     line-height: 33.6px;
     max-width: 55%;
+}
+
+.book-presentation-container {
+    margin-top: 1rem;
+    font-weight: 700;
+    display: flex;
+    line-height: 12px;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.book-presentation-container__cta {
+    background-color: #111423;
+    color: white;
+    max-width: 668.75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.book-presentation-container__cta__title {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #FDF8F1;
+    color: black;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.container__cta__description {
+    font-size: 1rem;
+    line-height: 36px;
+    text-align: center;
+}
+
+.book-presentation-container__cta__separator{
+    width: 100%;
+}
+
+.book-presentation-container__cta_errors {
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.book-presentation-container__cta__description{
+    padding: 0 0.625rem;
+    text-align: center;
+    line-height: 1.5rem;
+    max-width: 500px;
+}
+
+.book-presentation-container__cta_error > .error_title {
+    font-weight: 700;
+    text-decoration: underline;
+    padding-left: 0.5rem;
+}
+
+.book-presentation-container__cta_error > .error_description {
+    font-weight: 700;
+}
+
+.book-presentation-container__cta_error i {
+    font-size:20px; 
+    color:rgba(148, 116, 67, 1); 
 }
